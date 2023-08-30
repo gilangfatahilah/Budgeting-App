@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budgeting App - GFA</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="sub-container">
+          <div class="total-amount-container">
+            <h3>Budget</h3>
+            <p class="hide error" id="budget-error">
+              Values cannot be empty or negative.
+            </p>
+
+            <input
+              type="number"
+              id="total-amount"
+              placeholder="Enter total Amount"
+            />
+            <div class="button-container">
+              <button class="submit" id="total-amount-button">Enter</button>
+              <button class="reset" id="reset-amount-button">reset</button>
+            </div>
+          </div>
+
+          <div class="user-amount-container">
+            <h3>Expenses</h3>
+            <p class="hide error" id="product-title-error">
+              Values cannot be empty or negative.
+            </p>
+
+            <input
+              type="text"
+              class="product-title"
+              id="product-title"
+              placeholder="Enter title of product"
+            />
+            <input
+              type="number"
+              id="user-amount"
+              placeholder="Enter cost of product"
+            />
+            <button class="submit" id="check-amount">Enter</button>
+          </div>
+        </div>
+
+        <div class="output-container flex-space">
+          <div>
+            <p>Total Budget</p>
+            <span id="amount"> 0 </span>
+          </div>
+          <div>
+            <p>Expenses</p>
+            <span id="expenditure-value"> 0 </span>
+          </div>
+          <div>
+            <p>Balance</p>
+            <span id="balance-amount"> 0 </span>
+          </div>
+        </div>
+      </div>
+      <div class="list">
+        <h3>Expenses List</h3>
+        <div class="list-container" id="list"></div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <div class="icons">
+          <a target="_blank" href="https://www.linkedin.com/in/gilang-fatahilah-akbar-42044125b/"><i class="fa-brands fa-linkedin"></i></a>
+          <a target="_blank" href="https://github.com/gilangfatahilah"><i class="fa-brands fa-github"></i></a>
+          <a target="_blank" href="https://instagram.com/gilanqf"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <h4>Made with &#128151 by <a target="_blank" href="https://instagram.com/gilanqf">Gilang Fatahilah</a></h4>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
