@@ -87,6 +87,8 @@ checkAmountButton.addEventListener("click", () => {
   if (!userAmount.value || !productTitle.value || userAmount.value < 0) {
     productTitleError.classList.remove("hide");
     return false;
+  } else {
+    productTitleError.classList.add("hide");
   }
   disableButtons(false);
 
